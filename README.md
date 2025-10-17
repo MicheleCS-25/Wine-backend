@@ -80,7 +80,7 @@ O backend estará rodando em: **⁠ (http://127.0.0.1:5000/)**
 
 A documentação interativa completa dos endpoints está disponível através do *Swagger UI*, acessível no seu navegador após iniciar o servidor:
 
-*URL da Documentação:* ⁠ http://127.0.0.1:5000/apidocs ⁠
+*URL da Documentação:** ⁠ (http://127.0.0.1:5000/apidocs/) ⁠**
 
 ### Endpoints Principais (CRUD)
 
@@ -116,6 +116,7 @@ O arquivo ⁠ schemas/config.py ⁠ gerencia as configurações de ambiente.
 
   * A chave *⁠ config_name = 'development' ⁠* em ⁠ app.py ⁠ carrega a configuração da classe ⁠ DevelopmentConfig ⁠.
   * O banco de dados é configurado por padrão como *SQLite* (⁠ sqlite:///database.db ⁠), persistindo o arquivo ⁠ database.db ⁠ na raiz do projeto. Para mudar para um banco de dados de produção, basta atualizar a ⁠ SQLALCHEMY_DATABASE_URI ⁠ na classe ⁠ ProductionConfig ⁠.
+
 
 
 
