@@ -40,11 +40,14 @@ Você deve ter o *Python 3* instalado em seu sistema.
 
 Recomendado para isolar as dependências do projeto.
 
-⁠ bash
+⁠ Virtualenv 
+
 # Cria o ambiente virtual
-python -m venv venv
+
+python3 -m venv venv
 
 # Ativa o ambiente virtual
+
 # No Linux/macOS:
 source venv/bin/activate
 # No Windows (PowerShell):
@@ -56,8 +59,11 @@ source venv/bin/activate
 Instale todas as bibliotecas necessárias. *Nota:* Assumindo que você tem um arquivo ⁠ requirements.txt ⁠ com as dependências (Flask, Flask-SQLAlchemy, Flasgger, Flask-CORS). Se não tiver, instale manualmente:
 
 ⁠ bash
-pip install Flask Flask-SQLAlchemy Flasgger Flask-CORS
+pip install Flask, pip intall Flask-SQLAlchemy, pip install Flasgger, pip install Flask-CORS
+
+No seu terminal
  ⁠
+### No terminal de um Pip Freeze para gerar o arquivo Requirements.txt
 
 ### 3\. Executar a Aplicação
 
@@ -67,8 +73,7 @@ A aplicação será iniciada no modo de desenvolvimento, criando o arquivo ⁠�
 python app.py
  ⁠
 
-O backend estará rodando em: **⁠ http://127.0.0.1:5000/ ⁠** [
-](http://127.0.0.1:5000/)
+O backend estará rodando em: **⁠ http://127.0.0.1:5000/ ⁠** 
 -----
 
 ## 📝 Documentação da API (Swagger UI)
@@ -111,4 +116,5 @@ O arquivo ⁠ schemas/config.py ⁠ gerencia as configurações de ambiente.
 
   * A chave *⁠ config_name = 'development' ⁠* em ⁠ app.py ⁠ carrega a configuração da classe ⁠ DevelopmentConfig ⁠.
   * O banco de dados é configurado por padrão como *SQLite* (⁠ sqlite:///database.db ⁠), persistindo o arquivo ⁠ database.db ⁠ na raiz do projeto. Para mudar para um banco de dados de produção, basta atualizar a ⁠ SQLALCHEMY_DATABASE_URI ⁠ na classe ⁠ ProductionConfig ⁠.
+
 
