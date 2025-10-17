@@ -73,7 +73,7 @@ A aplicação será iniciada no modo de desenvolvimento, criando o arquivo ⁠�
 python app.py
  ⁠
 
-O backend estará rodando em: **⁠ http://127.0.0.1:5000/ ⁠** 
+O backend estará rodando em: **⁠ (http://127.0.0.1:5000/)** 
 -----
 
 ## 📝 Documentação da API (Swagger UI)
@@ -116,5 +116,6 @@ O arquivo ⁠ schemas/config.py ⁠ gerencia as configurações de ambiente.
 
   * A chave *⁠ config_name = 'development' ⁠* em ⁠ app.py ⁠ carrega a configuração da classe ⁠ DevelopmentConfig ⁠.
   * O banco de dados é configurado por padrão como *SQLite* (⁠ sqlite:///database.db ⁠), persistindo o arquivo ⁠ database.db ⁠ na raiz do projeto. Para mudar para um banco de dados de produção, basta atualizar a ⁠ SQLALCHEMY_DATABASE_URI ⁠ na classe ⁠ ProductionConfig ⁠.
+
 
 
